@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple</title>
+    <link rel='icon' href='images/icons/favicon.ico' type='image' >
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="nav-wrapper fixed-top "" id="navbar-example2 ">
+    <nav class="navbar  navbar-toggleable-sm navbar-expand-md   bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/icons/favicon.ico" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav nav-justified w-100 nav-fill">
+            <nav class="navbar "></nav>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products" >Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faqs">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="reviews.html">Reviews</a>
+            </li>
+           
+						<li class="nav-item">
+
+              <a class="nav-link" href="cart.html" style="font-size: 10px;"><img src="images/icons/cart-sm.png" id="bag"></a>
+              <span class="badge bg-body-success">8</span>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html"> <i class="fas fa-user"></i></a>
+             
+            </li>
+            <li class="nav-item" >
+             
+              <a class="nav-link d-flex justify-content-around" href="#"><input type="text" placeholder="search"><button id="search" class='fab'>&#x26B2;</button></a>
+
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- navigation end bar -->
+<!-- header -->
+    <header id = "header"  class = " vh-25 carousel slide" data-bs-ride = "carousel">
+    
+      <div class = " colcontainer h-25 d-flex align-items-center  carousel-inner">
+        
+          <div class = "text-center carousel-item active">
+            <img src="images/phones/ip1.png" class="img-fluid" id="c1">
+              <h2 class = "text-capitalize ">best gadgets</h2>
+              <h1 class = "text-uppercase py-2 fw-bold">new arrivals</h1>
+              <a href = "#" class = "btn mt-3 text-uppercase btn-dark">shop now</a>
+          </div>
+          <div class = "text-center carousel-item">
+            <img src="images/phones/ip2.jpg" class="img-fluid" id="c2">
+            <h2 class = "text-capitalize ">best gadgets</h2>
+            <h1 class = "text-uppercase py-2 fw-bold ">new arrivals</h1>
+              <a href = "#" class = "btn mt-3 text-uppercase btn-dark">buy now</a>
+          </div>
+          <div class = "text-center carousel-item">
+            <img src="images/phones/ip3.png" class="img-fluid "  id="c3">
+            <h2 class = "text-capitalize ">best gadgets</h2>
+            <h1 class = "text-uppercase py-2 fw-bold ">new arrivals</h1>
+              <a href = "#" class = "btn mt-3 text-uppercase btn-dark">buy now</a>
+          </div>
+        </div>
+      </div>
+
+      <button class = "carousel-control-prev carousel-dark" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+          <span class = "carousel-control-prev-icon"></span>
+      </button>
+      <button class = "carousel-control-next carousel-dark" type = "button" data-bs-target="#header" data-bs-slide = "next">
+          <span class = "carousel-control-next-icon"></span>
+      </button>
+  </header>
+  <!-- header end -->
+  <!-- cart -->
+<!-- <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+  <div class="col-md6 col-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0 justify-content-center" id="cart" style="position: absolute;
+    z-index: 1;
+    top:80px;
+    overflow: auto;">
+    <div class="d-flex ">
+      <div class="col-md-3 flex-fill w-auto" >
+           <h5>Product</h5>
+      </div>
+      <div class="col-md-2 d-flex  flex-fill w-auto">
+        <h5>Title</h5>
+      </div>
+      <div class="col-md-3 d-flex flex-fill w-auto">
+        <h5>Quantity</h5>
+      </div><div class="col-md-2 d-flex flex-fill w-auto">
+        <h5>Price</h5>
+      </div>
+     
+      
+      <div class="col-md-1"></div>
+    </div>
+    <div id="order" style="overflow: auto;height: 250px;"></div>
+    <div id="cart-footer">
+      <div id="order-btn" class="text-center text-white w-100 bg-dark p-2 fw-bold "style="letter-spacing:1.2px;font-size: 20px;">Order</div>
+      
+    </div>
+  </div>
+</div> -->
+<!-- cart end -->
+
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="container-fluid mt-20">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Iphone 13 pro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src = "images/phones/ip4.jpg " class = "card-img ">
+        <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
+      </div>
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary container-fluid" data-bs-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary container-fluid">Understood</button> -->
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+
+<br><br><br><br><br><br><br>
+  <!-- section products -->
+  <section id = "products" class = "py-5">
+    <div class = "container">
+      
+        <div class = "title text-center">
+            <h2 class = "position-relative d-inline-block">Apple Products</h2>
+            <hr class="mb-2">
+        </div>
+
+        <div class = "row g-0">
+            <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">iPhones</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">iPad</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Mac</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".watch">Watch</button>
+            </div>
+           
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src = "images/phones/ip4.jpg " class = "card-img "></a>
+                       
+                    </div>
+
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">iphone 13 pro</p>
+                        <span class = "fw-bold d-block">Php 94,440</span>
+                       
+                    </div>
+                </div>
+                    
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                      <img src = "images/gggg_.jpg" class = "w-100 card-img ">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">iphone 12 pro</p>
+                        <span class = "fw-bold d-block">Php 77,990</span>
+                      
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                  <div class = "collection-img position-relative">
+                    <img src = "images/huhu_.jpg" class = "w-100 card-img ">
+                    
+                  </div>
+                  <div class = "text-center">
+                      <div class = "rating mt-3">
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      </div>
+                      <p class = "text-capitalize my-1">iphone 11 </p>
+                      <span class = "fw-bold d-block">Php 25,190</span>
+                      
+                  </div>
+              </div>
+              <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class = "collection-img position-relative">
+                  <img src = "images/apple-iphone-8-plus-1639478790.jpg" class = "w-100 card-img ">
+                  
+                </div>
+                <div class = "text-center">
+                    <div class = "rating mt-3">
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                    </div>
+                    <p class = "text-capitalize my-1">iphone plus</p>
+                    <span class = "fw-bold d-block">Php 12,000</span>
+                   
+                </div>
+            </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                      <img src = "images/ipdpro.jpg" class = "card-img ">
+                       
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">ipad pro</p>
+                        <span class = "fw-bold d-block">Php 139,440</span>
+                       
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                       <img src = "images/ipadair5.jpg" class = "card-img ">
+                       
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">ipad air</p>
+                        <span class = "fw-bold d-block">Php 59,990</span>
+                     
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                      <img src = "images/ipd 12.jpg" class = "card-img ">
+                       
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">ipad pro 12.9"</p>
+                        <span class = "fw-bold d-block">Php 122,569</span>
+                        
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                      <img src = "images/yes_.jpg " class = "card-img ">
+                       
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">ipad pro m2</p>
+                        <span class = "fw-bold d-block">Php 128,970</span>
+                      
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                      <img src = "images/apple-macbook-pro-13-inch-mwp52.jpg" class = "card-img ">
+                      
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">macbook pro</p>
+                        <span class = "fw-bold d-block">Php 126,990</span>
+                    
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                  <div class = "collection-img position-relative">
+                    <img src = "images/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg " class = "card-img ">
+                     
+                  </div>
+                  <div class = "text-center">
+                      <div class = "rating mt-3">
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      </div>
+                      <p class = "text-capitalize my-1">macbook air</p>
+                      <span class = "fw-bold d-block">Php 57,990</span>
+                     
+                  </div>
+              </div>
+              <div class = "col-md-6 col-lg-4 col-xl-3 p-2 watch">
+                <div class = "collection-img position-relative">
+                  <img src = "images/ultra2.jfif " class = "card-img ">
+                   
+                </div>
+                <div class = "text-center">
+                    <div class = "rating mt-3">
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                    </div>
+                    <p class = "text-capitalize my-1">ultra</p>
+                    <span class = "fw-bold d-block">Php 67,990</span>
+                   
+                </div>
+            </div>
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 watch">
+              <div class = "collection-img position-relative">
+                <img src = "images/series 8.jfif " class = "card-img ">
+                 
+              </div>
+              <div class = "text-center">
+                  <div class = "rating mt-3">
+                      <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                      <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                  </div>
+                  <p class = "text-capitalize my-1">series 8</p>
+                  <span class = "fw-bold d-block">Php 57,990</span>
+                 
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+ <!-- contact us -->
+<section id="contact" class="py-10">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <div class="title">
+          <h2 class="position-relative d-inline-block ms-4 ">Contact Us</h2>
+          <hr class="mb-2">
+        </div>
+        <div class="mt-2"> <p><i class="fas fa-home mr-3"></i>Asan Sur Sison Pangasinan</p>
+          <p><i class="fas fa-envelope mr-3"></i> kuntadashii5@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 63-939-245-2308</p></div>
+          <p><i class="fab fa-facebook-f"></i> Marben Caoile</p></div>
+         
+       
+      </div>
+     
+          
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- contact us end -->
+<!-- contact us -->
+<section id="faqs" class="py-10">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <div class="title">
+          <h2 class="position-relative d-inline-block ms-4 ">Frequently Ask Questions</h2>
+          <hr class="mb-2">
+        </div>
+        <div class=" mt-2 "><p>What made apple popular?</p>
+          <p>What made apple popular?</p>
+          <p>Why apple products is necessary?</p>
+          <p>What makes it special?</p>
+          <p>What the services offered?</p>
+          <p>How many types of products does apple have?</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- contact us end -->
+
+
+
+
+
+<!-- reviews -->
+<section id="reviews" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <div class="title">
+          <h2 class="position-relative d-inline-block ms-4">Reviews</h2>
+          <hr class="mb-2">
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="full-boxer justify-content-around">
+          <div class="comment-box">
+            <div class="box-top">
+              <div class="Profile">
+                <div class="profile-image">
+                  <img src="images/1.png">
+                </div>
+                <div class="Name">
+                  <strong>Rhea Lochana</strong>
+                  <span>@lochanarhea21</span>
+                  <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+          </div>
+          <div class="comment-box">
+            <div class="box-top">
+              <div class="Profile">
+                <div class="profile-image">
+                  <img src="images/2.png">
+                </div>
+                <div class="Name">
+                  <strong>Marcus Brown</strong>
+                  <span>@mrcsbrwn</span>
+                  <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+          </div>
+          <div class="comment-box">
+            <div class="box-top">
+              <div class="Profile">
+                <div class="profile-image">
+                  <img src="images/3.png">
+                </div>
+                <div class="Name">
+                  <strong>Althea Rodriguez</strong>
+                  <span>@theaa23</span>
+                  <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+          </div>
+          <div class="comment-box">
+            <div class="box-top">
+              <div class="Profile">
+                <div class="profile-image">
+                  <img src="images/4.png">
+                </div>
+                <div class="Name">
+                  <strong>Patrick Wise</strong>
+                  <span>@clevercode</span>
+                  <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" class="text-center text-lg-start text-white" style="background-color: #42464e">
+  <div
+       class="text-center p-3"
+       style="background-color: rgba(0, 0, 0, 0.2)"
+       >
+    © Designed by: Marben Caoile
+  </div>
+  <!-- Copyright -->
+</footer>
+<script>
+  $(function() {
+    $('body').scrollspy({ target: '.navbar', offset: 100 });
+  });
+</script>
+<!-- End of .container -->
+
+<!-- end reviews -->
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src = "script.js"></script>
+<script src = "script2.js"></script>
+<script src = "cart.js"></script>
+  </body>
+</html>
